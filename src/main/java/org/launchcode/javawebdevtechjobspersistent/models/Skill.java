@@ -11,6 +11,10 @@ public class Skill extends AbstractEntity {
     @Size(min=2,max=100,message="Please enter an appropriate description.")
     private String description;
 
+    public Skill(String d) {
+        this.description = d;
+    }
+
     public Skill() {
     }
 

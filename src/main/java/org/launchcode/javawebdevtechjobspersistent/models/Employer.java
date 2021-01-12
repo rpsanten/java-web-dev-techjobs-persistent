@@ -11,6 +11,10 @@ public class Employer extends AbstractEntity {
     @Size(min=2,max=100,message="Please enter an appropriate location")
     private String location;
 
+    public Employer(String l) {
+        this.location = l;
+    }
+
     public Employer() {
     }
 
@@ -21,4 +25,5 @@ public class Employer extends AbstractEntity {
     public void setLocation(String location) {
         this.location = location;
     }
+
 }
